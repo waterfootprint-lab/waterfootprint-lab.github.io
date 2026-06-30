@@ -1,18 +1,19 @@
 {
   "pi": {
     "name": "Dr. Mesfin Mekonnen",
-    "title": "Assistant Professor, Civil, Construction & Environmental Engineering \u2014 The University of Alabama",
+    "title": "Assistant Professor, Civil, Construction & Environmental Engineering — The University of Alabama",
     "photo": "assets/img/mesfin-mekonnen.svg",
     "bio": "Dr. Mekonnen leads the Water Footprint Lab and the broader water security research group at the University of Alabama, which he joined in 2020. He holds a Ph.D. in Water Engineering and Management from the University of Twente (the Netherlands), and previously held positions at the Daugherty Water for Food Global Institute (University of Nebraska) and as a postdoctoral researcher at the University of Twente.",
-    "bio2": "His work focuses on the relationship between human and natural systems in freshwater use \u2014 mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
+    "bio2": "His work focuses on the relationship between human and natural systems in freshwater use — mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
     "credentials": [
-      "Ph.D., Water Engineering & Water Management \u2014 University of Twente, 2011",
-      "M.Sc., Environmental Science & Technology \u2014 UNESCO-IHE, 2005",
-      "Affiliate, Center for Complex Hydrosystems Research \u00b7 Center for Water Quality Research \u00b7 Center for Sustainable Infrastructure"
+      "Ph.D., Water Engineering & Water Management — University of Twente, 2011",
+      "M.Sc., Environmental Science & Technology — UNESCO-IHE, 2005",
+      "Affiliate, Center for Complex Hydrosystems Research · Center for Water Quality Research · Center for Sustainable Infrastructure"
     ],
     "links": {
       "profile": "https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/",
       "scholar": "https://scholar.google.com/citations?user=REPLACE_WITH_SCHOLAR_ID",
+      "linkedin": "",
       "email": "mesfin.mekonnen@ua.edu"
     }
   },
@@ -24,44 +25,47 @@
       "photo": "assets/img/habtamu-tamiru.svg",
       "links": {
         "email": "",
-        "scholar": ""
+        "scholar": "",
+        "linkedin": ""
       },
       "status": "Ongoing"
     },
 
-        {
+    {
       "name": "Swatantra Kumar Sharma",
       "role": "Ph.D. Student (2022)",
       "focus": "His research integrates remote sensing, hydrologic modeling, crop modeling, and machine learning to improve the estimation of evapotranspiration, soil moisture, irrigation water use, and agricultural water productivity. He develops scalable computational workflows using satellite observations and environmental datasets to support sustainable water resources management under climate variability and land-use change. Prior to joining The University of Alabama, he worked as a Project Research Assistant at IIT Bombay, contributing to watershed modeling and climate change impact assessments.",
       "photo": "assets/img/swatantra-sharma.svg",
       "links": {
         "email": "",
-        "scholar": ""
+        "scholar": "",
+        "linkedin": ""
       },
       "status": "Ongoing"
     },
 
-        {
+    {
       "name": "Betelhem Demeke",
       "role": "Ph.D. Student (2021-2026)",
-      "focus": "Research focus: [add \u2014 e.g. water scarcity indicators]",
+      "focus": "Research focus: [add — e.g. water scarcity indicators]",
       "photo": "assets/img/betelhem-demeke.svg",
       "links": {
         "email": "",
-        "scholar": ""
+        "scholar": "",
+        "linkedin": ""
       },
       "status": "Graduated"
     },
 
-
     {
       "name": "Mahlet Melaku",
       "role": "Ph.D. Student (2021-2026)",
-      "focus": "Research focus: [add \u2014 e.g. agricultural water productivity]",
+      "focus": "Research focus: [add — e.g. agricultural water productivity]",
       "photo": "assets/img/mahlet-melaku.svg",
       "links": {
         "email": "",
-        "scholar": ""
+        "scholar": "",
+        "linkedin": ""
       },
       "status": "Graduated"
     },
@@ -69,14 +73,14 @@
     {
       "name": "Fitsume Teshome",
       "role": "Ph.D. Student (2021-2024)",
-      "focus": "Research focus: [add \u2014 e.g. food-energy-water nexus]",
+      "focus": "Research focus: [add — e.g. food-energy-water nexus]",
       "photo": "assets/img/fitsume-teshome.svg",
       "links": {
         "email": "",
-        "scholar": ""
+        "scholar": "",
+        "linkedin": ""
       },
       "status": "Graduated"
     }
-
   ]
 }

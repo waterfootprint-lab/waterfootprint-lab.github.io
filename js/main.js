@@ -67,6 +67,7 @@ async function renderPI(sel) {
         <a href="${pi.links.profile}" target="_blank" rel="noopener">University Profile</a>
         <a href="mailto:${pi.links.email}">Email</a>
         <a href="${pi.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>
+        ${pi.links.linkedin ? `<a href="${pi.links.linkedin}" target="_blank" rel="noopener">LinkedIn</a>` : ''}
       </div>
     </div>`;
 }
@@ -76,6 +77,7 @@ let _studentData = [];
 
 const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>';
 const SCHOLAR_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V17c0 1 2.7 3 6 3s6-2 6-3v-5.5"/></svg>';
+const LINKEDIN_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.04 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8.25h4V23h-4V8.25zM8.5 8.25h3.83v2.01h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-7.04c0-1.68-.03-3.84-2.34-3.84-2.34 0-2.7 1.83-2.7 3.72V23h-4V8.25z"/></svg>';
 const INFO_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>';
 
 async function renderStudents(sel) {
@@ -96,6 +98,7 @@ async function renderStudents(sel) {
         <span title="Research focus" class="js-info">${INFO_ICON}</span>
         ${s.links?.email ? `<a href="mailto:${s.links.email}" title="Email" onclick="event.stopPropagation()">${MAIL_ICON}</a>` : ''}
         ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener" title="Google Scholar" onclick="event.stopPropagation()">${SCHOLAR_ICON}</a>` : ''}
+        ${s.links?.linkedin ? `<a href="${s.links.linkedin}" target="_blank" rel="noopener" title="LinkedIn" onclick="event.stopPropagation()">${LINKEDIN_ICON}</a>` : ''}
       </div>
     </div>`).join('');
 
@@ -137,6 +140,7 @@ function openStudentModal(s) {
   linksEl.innerHTML = `
     ${s.links?.email ? `<a href="mailto:${s.links.email}">Email</a>` : ''}
     ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>` : ''}
+    ${s.links?.linkedin ? `<a href="${s.links.linkedin}" target="_blank" rel="noopener">LinkedIn</a>` : ''}
   `;
   overlay.classList.add('open');
 }
