@@ -74,6 +74,10 @@ async function renderPI(sel) {
 /* ---- Student grid + click-to-expand modal (team page) ---- */
 let _studentData = [];
 
+const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>';
+const SCHOLAR_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V17c0 1 2.7 3 6 3s6-2 6-3v-5.5"/></svg>';
+const INFO_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>';
+
 async function renderStudents(sel) {
   const el = document.querySelector(sel);
   if (!el) return;
@@ -86,10 +90,12 @@ async function renderStudents(sel) {
       <div class="team-card-photo">
         <img src="${s.photo}" alt="${esc(s.name)}" loading="lazy">
       </div>
-      <div class="team-card-body">
-        <div class="team-card-name">${esc(s.name)}</div>
-        <div class="team-card-role">${esc(s.role)} (${esc(s.status || 'Ongoing')})</div>
-        <div class="team-card-hint">Click for research focus →</div>
+      <div class="team-card-name">${esc(s.name)}</div>
+      <div class="team-card-role">${esc(s.role)} (${esc(s.status || 'Ongoing')})</div>
+      <div class="team-card-icons">
+        <span title="Research focus" class="js-info">${INFO_ICON}</span>
+        ${s.links?.email ? `<a href="mailto:${s.links.email}" title="Email" onclick="event.stopPropagation()">${MAIL_ICON}</a>` : ''}
+        ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener" title="Google Scholar" onclick="event.stopPropagation()">${SCHOLAR_ICON}</a>` : ''}
       </div>
     </div>`).join('');
 
