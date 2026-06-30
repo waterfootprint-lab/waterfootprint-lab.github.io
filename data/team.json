@@ -26,7 +26,7 @@
         "email": "",
         "scholar": ""
       },
-      // "status": "Ongoing"
+      "status": "Ongoing"
     },
     {
       "name": "Mahlet Melaku",
@@ -37,7 +37,7 @@
         "email": "",
         "scholar": ""
       },
-      // "status": "Graduated"
+      "status": "Graduated"
     },
     {
       "name": "Betelhem Demeke",
@@ -48,7 +48,7 @@
         "email": "",
         "scholar": ""
       },
-      // "status": "Graduated"
+      "status": "Graduated"
     },
     {
       "name": "Fitsume Teshome",
@@ -58,8 +58,8 @@
       "links": {
         "email": "",
         "scholar": ""
-      }
-      // "status": "Graduated"
+      },
+      "status": "Graduated"
     },
     {
       "name": "Swatantra Sharma",
@@ -70,7 +70,7 @@
         "email": "",
         "scholar": ""
       },
-      // "status": "Ongoing"
+      "status": "Ongoing"
     }
   ]
 }
