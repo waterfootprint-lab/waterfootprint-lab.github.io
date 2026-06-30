@@ -643,33 +643,11 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .highlight-card:hover .highlight-img-wrap img { transform: scale(1.04); }
 
-.highlight-body { padding: 1.2rem 1.3rem 1.4rem; flex: 1; display: flex; flex-direction: column; }
-.highlight-name {
-  font-size: 0.76rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--crimson);
-  margin-bottom: 0.4rem;
-}
-.highlight-title {
-  font-family: var(--font-head);
-  font-size: 1.05rem;
-  font-weight: bold;
-  color: var(--black);
-  margin-bottom: 0.55rem;
-  line-height: 1.3;
-}
-.highlight-card:hover .highlight-title { color: var(--crimson); }
-.highlight-caption {
-  font-size: 0.85rem;
-  color: var(--gray-mid);
-  margin-bottom: 0.5rem;
-}
+.highlight-body { padding: 1rem 1.1rem 1.2rem; flex: 1; }
 .highlight-citation {
-  font-size: 0.78rem;
-  color: var(--gray-mid);
-  margin-top: auto;
+  font-size: 0.85rem;
+  color: var(--gray-dark);
+  line-height: 1.5;
 }
 .highlight-citation em { font-style: italic; }
 
@@ -731,10 +709,8 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .lightbox-close:hover { color: var(--crimson); }
 .lightbox-box img { width: 100%; height: auto; display: block; }
-.lightbox-info { padding: 1.5rem 1.7rem 1.7rem; }
-.lightbox-info .highlight-name { margin-bottom: 0.4rem; }
-.lightbox-info .highlight-title { font-size: 1.3rem; margin-bottom: 0.6rem; }
-.lightbox-info p { color: var(--gray-dark); margin-bottom: 0.5rem; max-width: none; }
+.lightbox-info { padding: 1.4rem 1.6rem 1.6rem; }
+.lightbox-info .highlight-citation { font-size: 0.95rem; }
 .lightbox-info .highlight-citation a { color: var(--blue); }
 
 /* =========================================================================
