@@ -238,3 +238,69 @@ async function renderPositions(sel) {
 }
 
 document.addEventListener('DOMContentLoaded', () => { initNav(); });
+
+/* ---- Research Highlights gallery (home page) ---- */
+let _highlightData = [];
+
+async function renderHighlights(sel) {
+  const el = document.querySelector(sel);
+  if (!el) return;
+  const data = await loadJSON('data/highlights.json');
+  if (!data || data.length === 0) { el.innerHTML = '<p class="state-msg">No highlights yet.</p>'; return; }
+  _highlightData = data;
+
+  el.innerHTML = data.map((h, i) => `
+    <div class="highlight-card" data-idx="${i}">
+      <div class="highlight-img-wrap">
+        <img src="${h.image}" alt="${esc(h.alt || h.caption)}" loading="lazy">
+      </div>
+      <div class="highlight-body">
+        <div class="highlight-name">${esc(h.name)}</div>
+        <p class="highlight-caption">${esc(h.caption)}</p>
+        <div class="highlight-citation">${h.citation}</div>
+      </div>
+    </div>`).join('');
+
+  el.querySelectorAll('.highlight-card').forEach(card => {
+    card.addEventListener('click', () => openLightbox(_highlightData[card.dataset.idx]));
+  });
+
+  ensureLightbox();
+}
+
+function ensureLightbox() {
+  if (document.getElementById('fig-lightbox')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'fig-lightbox';
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = `
+    <div class="lightbox-box">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-info">
+        <div class="highlight-name" id="lightbox-name"></div>
+        <p id="lightbox-caption"></p>
+        <div class="highlight-citation" id="lightbox-citation"></div>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeLightbox(); });
+  overlay.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+}
+
+function openLightbox(h) {
+  const overlay = document.getElementById('fig-lightbox');
+  overlay.querySelector('#lightbox-img').src = h.image;
+  overlay.querySelector('#lightbox-img').alt = h.alt || h.caption;
+  overlay.querySelector('#lightbox-name').textContent = h.name;
+  overlay.querySelector('#lightbox-caption').textContent = h.caption;
+  overlay.querySelector('#lightbox-citation').innerHTML =
+    h.link ? `${h.citation} — <a href="${h.link}" target="_blank" rel="noopener">View paper →</a>` : h.citation;
+  overlay.classList.add('open');
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('fig-lightbox');
+  if (overlay) overlay.classList.remove('open');
+}

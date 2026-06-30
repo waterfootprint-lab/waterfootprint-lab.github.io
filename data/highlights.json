@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Fitsume Teshome",
+    "image": "assets/img/highlights/fitsume-kge-conus.png",
+    "alt": "Maps of Kling-Gupta Efficiency (KGE) for streamflow simulations across the contiguous United States, comparing five meteorological forcing datasets: CPC, GRIDMET, W5E5, EWEMBI, and WFDEI.",
+    "caption": "Kling-Gupta Efficiency (KGE) of streamflow simulations across CONUS gauges (1979–2016) under five meteorological forcing datasets — CPC, GRIDMET, W5E5, EWEMBI, and WFDEI.",
+    "citation": "Teshome, F. et al. <em>Journal of Hydrology</em>.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022169423015172"
+  },
+  {
+    "name": "Mahlet Melaku",
+    "image": "assets/img/highlights/mahlet-pfas-adsorption.png",
+    "alt": "Adsorption kinetics and isotherm plots for PFOA, PFOS, PFBA, and PFBS on activated carbon, including pseudo-first/second-order kinetic fits, intraparticle diffusion, and Langmuir/Freundlich isotherms.",
+    "caption": "Adsorption kinetics and isotherm modeling of PFAS compounds (PFOA, PFOS, PFBA, PFBS) on biomass-derived activated carbon.",
+    "citation": "Melaku, M. et al. <em>ACS ES&amp;T Water</em>.",
+    "link": "https://pubs.acs.org/doi/full/10.1021/acsestwater.5c00641"
+  },
+  {
+    "name": "Betelhem Wondimneh Demeke",
+    "image": "assets/img/highlights/betelhem-water-footprint-sankey.png",
+    "alt": "Sankey diagrams showing the green and blue water footprint of global crop production by crop group and end use, comparing 1972 and 2018.",
+    "caption": "Green and blue water footprint of global crop production, by crop group and end use, comparing 1972 and 2018.",
+    "citation": "Demeke, B.W. et al. <em>Scientific Reports</em>.",
+    "link": "https://www.nature.com/articles/s41598-026-46362-8"
+  },
+  {
+    "name": "Habtamu Tamiru",
+    "image": "assets/img/highlights/habtamu-budyko-deviations.png",
+    "alt": "Scatter plots showing deviations of calibrated and machine-learning-adjusted evaporative index from the Budyko curve across six different Budyko parameterizations.",
+    "caption": "Deviations of SCE-calibrated and machine-learning-adjusted evaporative index from the Budyko curve, across six parameterizations.",
+    "citation": "Tamiru, H. et al.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2589915526000039"
+  }
+]

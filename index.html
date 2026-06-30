@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Water Footprint and hydrosystems Lab University of Alabama</title>
+<title>Water Footprint Lab — University of Alabama</title>
 <meta name="description" content="The Water Footprint Lab at the University of Alabama studies global water footprints, water scarcity, and the food-energy-water nexus, led by Dr. Mesfin Mekonnen.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -47,6 +47,18 @@
       <div class="hero-btns">
         <a class="btn" href="projects.html">Our Research</a>
         <a class="btn btn-outline" href="team.html">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH HIGHLIGHTS GALLERY -->
+  <section class="section">
+    <div class="wrap">
+      <span class="section-label">Research Highlights</span>
+      <h2>From the Team</h2>
+      <p>A look at recent figures and findings from the lab's published work — click any image for the full caption and link to the paper.</p>
+      <div class="highlights-grid" id="highlights-grid" style="margin-top:1.8rem;">
+        <p class="state-msg">Loading highlights…</p>
       </div>
     </div>
   </section>
@@ -107,6 +119,9 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  renderHighlights('#highlights-grid');
+</script>
 </body>
 </html>
