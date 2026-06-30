@@ -4,6 +4,9 @@
    ========================================================================= */
 
 :root {
+  --crimson:       #9E1B32;   /* University of Alabama crimson */
+  --crimson-dark:  #7A1526;
+  --crimson-light: #FBEAEC;
   --blue:       #1A5FA8;
   --blue-dark:  #124080;
   --blue-light: #EBF2FA;
@@ -18,8 +21,9 @@
   --font-body: "Arial", "Helvetica Neue", Helvetica, sans-serif;
   --font-mono: "Courier New", Courier, monospace;
 
-  --maxw: 860px;
-  --pad:  clamp(1rem, 4vw, 2.5rem);
+  --maxw: 1180px;
+  --maxw-narrow: 860px;
+  --pad:  clamp(1.25rem, 4vw, 3rem);
 }
 
 /* =========================================================================
@@ -60,6 +64,9 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   padding-left: var(--pad);
   padding-right: var(--pad);
 }
+.wrap--narrow {
+  max-width: var(--maxw-narrow);
+}
 
 .section {
   padding: 3.5rem 0;
@@ -74,14 +81,14 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
    ========================================================================= */
 .site-header {
   background: var(--white);
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 3px solid var(--crimson);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .nav {
-  max-width: 1100px;
+  max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 var(--pad);
   display: flex;
@@ -101,7 +108,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   font-family: var(--font-head);
   font-size: 1.45rem;
   font-weight: bold;
-  color: var(--blue-dark);
+  color: var(--crimson);
   letter-spacing: -0.01em;
   line-height: 1.1;
 }
@@ -132,8 +139,8 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--blue);
-  border-bottom-color: var(--blue);
+  color: var(--crimson);
+  border-bottom-color: var(--crimson);
 }
 
 .nav-toggle {
@@ -153,7 +160,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
     top: 100%;
     left: 0; right: 0;
     background: var(--white);
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 3px solid var(--crimson);
     flex-direction: column;
     padding: 0.5rem 0 1rem;
   }
@@ -166,7 +173,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
    Hero
    ========================================================================= */
 .hero {
-  background: var(--blue-dark);
+  background: var(--crimson);
   color: var(--white);
   padding: 4rem 0 3.5rem;
   text-align: center;
@@ -203,10 +210,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   cursor: pointer;
   border: 2px solid var(--white);
   background: var(--white);
-  color: var(--blue-dark);
+  color: var(--crimson);
   transition: background 0.15s, color 0.15s;
 }
-.btn:hover { background: var(--blue-light); color: var(--blue-dark); }
+.btn:hover { background: var(--crimson-light); color: var(--crimson-dark); }
 
 .btn-outline {
   background: transparent;
@@ -216,17 +223,17 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 .btn-outline:hover { background: var(--white); color: var(--blue-dark); }
 
 .btn-blue {
-  background: var(--blue);
+  background: var(--crimson);
   color: var(--white);
-  border: 2px solid var(--blue);
+  border: 2px solid var(--crimson);
 }
-.btn-blue:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.btn-blue:hover { background: var(--crimson-dark); border-color: var(--crimson-dark); }
 
 /* =========================================================================
    Page header (inner pages)
    ========================================================================= */
 .page-hero {
-  background: var(--blue-dark);
+  background: var(--crimson);
   color: var(--white);
   padding: 2.8rem 0 2.4rem;
 }
@@ -484,7 +491,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   margin-top: 4rem;
 }
 .footer-inner {
-  max-width: 1100px;
+  max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 var(--pad);
   display: grid;
@@ -500,7 +507,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 .footer-links a { color: #AAAAAA; text-decoration: none; font-size: 0.9rem; }
 .footer-links a:hover { color: var(--white); }
 .footer-bottom {
-  max-width: 1100px;
+  max-width: var(--maxw);
   margin: 2rem auto 0;
   padding: 1.2rem var(--pad) 0;
   border-top: 1px solid #333;
