@@ -2,7 +2,7 @@
   "pi": {
     "name": "Dr. Mesfin Mekonnen",
     "title": "Assistant Professor, Civil, Construction & Environmental Engineering \u2014 The University of Alabama",
-    "photo": "assets/img/pi-photo.svg",
+    "photo": "assets/img/mesfin-mekonnen.svg",
     "bio": "Dr. Mekonnen leads the Water Footprint Lab and the broader water security research group at the University of Alabama, which he joined in 2020. He holds a Ph.D. in Water Engineering and Management from the University of Twente (the Netherlands), and previously held positions at the Daugherty Water for Food Global Institute (University of Nebraska) and as a postdoctoral researcher at the University of Twente.",
     "bio2": "His work focuses on the relationship between human and natural systems in freshwater use \u2014 mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
     "credentials": [
@@ -12,7 +12,7 @@
     ],
     "links": {
       "profile": "https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/",
-      "scholar": "https://scholar.google.com/citations?user=6TI3NIsAAAAJ&hl=en",
+      "scholar": "https://scholar.google.com/citations?user=REPLACE_WITH_SCHOLAR_ID",
       "email": "mesfin.mekonnen@ua.edu"
     }
   },
@@ -21,7 +21,7 @@
       "name": "Habtamu Tamiru",
       "role": "Ph.D. Student",
       "focus": "Research focus: [add \u2014 e.g. global water footprint accounting]",
-      "photo": "assets/img/avatar-1.svg",
+      "photo": "assets/img/habtamu-tamiru.svg",
       "links": {
         "email": "",
         "scholar": ""
@@ -32,7 +32,7 @@
       "name": "Mahlet Melaku",
       "role": "Ph.D. Student",
       "focus": "Research focus: [add \u2014 e.g. agricultural water productivity]",
-      "photo": "assets/img/avatar-2.svg",
+      "photo": "assets/img/mahlet-melaku.svg",
       "links": {
         "email": "",
         "scholar": ""
@@ -43,7 +43,7 @@
       "name": "Betelhem Demeke",
       "role": "Ph.D. Student",
       "focus": "Research focus: [add \u2014 e.g. water scarcity indicators]",
-      "photo": "assets/img/avatar-3.svg",
+      "photo": "assets/img/betelhem-demeke.svg",
       "links": {
         "email": "",
         "scholar": ""
@@ -54,7 +54,7 @@
       "name": "Fitsume Teshome",
       "role": "Ph.D. Student",
       "focus": "Research focus: [add \u2014 e.g. food-energy-water nexus]",
-      "photo": "assets/img/avatar-4.svg",
+      "photo": "assets/img/fitsume-teshome.svg",
       "links": {
         "email": "",
         "scholar": ""
@@ -65,7 +65,7 @@
       "name": "Swatantra Sharma",
       "role": "Ph.D. Student",
       "focus": "Research focus: [add \u2014 e.g. remote sensing of irrigation water use]",
-      "photo": "assets/img/avatar-5.svg",
+      "photo": "assets/img/swatantra-sharma.svg",
       "links": {
         "email": "",
         "scholar": ""
