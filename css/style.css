@@ -103,10 +103,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   gap: 0.7rem;
   text-decoration: none;
 }
-.brand-mark { width: 36px; height: 36px; flex-shrink: 0; }
+.brand-mark { width: 48px; height: 48px; flex-shrink: 0; }
 .brand-name {
   font-family: var(--font-head);
-  font-size: 1.45rem;
+  font-size: 1.85rem;
   font-weight: bold;
   color: var(--crimson);
   letter-spacing: -0.01em;
@@ -170,30 +170,82 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 
 /* =========================================================================
-   Hero
+   Hero — animated impact stats
    ========================================================================= */
 .hero {
   background: var(--crimson);
-  color: var(--white);
-  padding: 4rem 0 3.5rem;
-  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
 }
-.hero h1 {
-  color: var(--white);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  margin-bottom: 0.8rem;
-}
-.hero p {
-  color: #C8DAEE;
-  font-size: 1.12rem;
-  max-width: 58ch;
-  margin: 0 auto 2rem;
-}
-.hero-btns {
+.hero-slides {
   display: flex;
-  gap: 1rem;
+  width: 300%;
+  animation: heroSlide 12s infinite;
+}
+@keyframes heroSlide {
+  0%,28%   { transform: translateX(0); }
+  33%,61%  { transform: translateX(-33.333%); }
+  66%,94%  { transform: translateX(-66.666%); }
+  100%     { transform: translateX(0); }
+}
+.hero-slide {
+  width: 33.333%;
+  padding: clamp(3rem,7vw,5.5rem) 0 clamp(2.5rem,6vw,5rem);
+  text-align: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+.hero-stat {
+  font-family: var(--font-head);
+  font-size: clamp(4.5rem, 12vw, 9rem);
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.2em;
+  letter-spacing: -0.03em;
+}
+.hero-stat-label {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: rgba(255,255,255,0.88);
+  max-width: 600px;
+  margin: 0 auto 0.6rem;
+  line-height: 1.4;
+  font-family: var(--font-body);
+}
+.hero-stat-source {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+/* Dot indicators -->
+.hero-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+.hero-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+}
+.hero-dot:nth-child(1) { animation: dotActive 12s infinite 0s; }
+.hero-dot:nth-child(2) { animation: dotActive 12s infinite 4s; }
+.hero-dot:nth-child(3) { animation: dotActive 12s infinite 8s; }
+@keyframes dotActive {
+  0%,28%  { background: rgba(255,255,255,0.95); }
+  33%,100%{ background: rgba(255,255,255,0.35); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slides { animation: none; }
+  .hero-slide:not(:first-child) { display: none; }
+  .hero-dots { display: none; }
 }
 
 /* =========================================================================
@@ -718,3 +770,43 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
    ========================================================================= */
 .state-msg { color: var(--gray-mid); font-size: 0.9rem; padding: 1rem 0; }
 .divider { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+/* =========================================================================
+   Positions page — contact / apply band
+   ========================================================================= */
+.contact-band {
+  background: var(--crimson);
+  color: #fff;
+  border-radius: 6px;
+  padding: 2.4rem 2.6rem;
+  margin-top: 2.4rem;
+}
+.contact-band h3 { color: #fff; margin-bottom: 0.4rem; font-size: 1.3rem; }
+.contact-band p  { color: rgba(255,255,255,0.88); margin-bottom: 1.2rem; max-width: none; }
+.contact-band .btn-white {
+  display: inline-block;
+  padding: 0.7em 1.6em;
+  font-weight: bold;
+  font-size: 0.95rem;
+  background: #fff;
+  color: var(--crimson);
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-right: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.contact-band .btn-white:hover { background: var(--crimson-light); }
+.contact-band .btn-outline-white {
+  display: inline-block;
+  padding: 0.7em 1.6em;
+  font-weight: bold;
+  font-size: 0.95rem;
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 3px;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.contact-band .btn-outline-white:hover { background: rgba(255,255,255,0.15); }
