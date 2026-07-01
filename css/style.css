@@ -94,7 +94,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
+  min-height: 88px;
 }
 
 .brand {
@@ -103,10 +103,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   gap: 0.7rem;
   text-decoration: none;
 }
-.brand-mark { width: 48px; height: 48px; flex-shrink: 0; }
+.brand-mark { width: 64px; height: 64px; flex-shrink: 0; }
 .brand-name {
   font-family: var(--font-head);
-  font-size: 1.85rem;
+  font-size: 2.3rem;
   font-weight: bold;
   color: var(--crimson);
   letter-spacing: -0.01em;
@@ -114,10 +114,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .brand-sub {
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   color: var(--gray-mid);
   display: block;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .nav-links {
@@ -209,7 +209,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .hero-stat-label {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: oklab(100% 0 -0.00011);
+  color: rgba(255,255,255,0.88);
   max-width: 600px;
   margin: 0 auto 0.6rem;
   line-height: 1.4;
@@ -217,7 +217,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .hero-stat-source {
   font-size: 0.8rem;
-  color: hwb(0 100% 0% / 0.945);
+  color: rgba(255,255,255,0.55);
   font-style: italic;
   margin-top: 0.2rem;
 }
