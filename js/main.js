@@ -242,15 +242,17 @@ document.addEventListener('DOMContentLoaded', () => { initNav(); });
 /* ---- Research Highlights gallery (home page) ---- */
 let _highlightData = [];
 
-async function renderHighlights(sel) {
+async function renderHighlights(sel, group) {
   const el = document.querySelector(sel);
   if (!el) return;
   const data = await loadJSON('data/highlights.json');
   if (!data || data.length === 0) { el.innerHTML = '<p class="state-msg">No highlights yet.</p>'; return; }
-  _highlightData = data;
 
-  el.innerHTML = data.map((h, i) => `
-    <div class="highlight-card" data-idx="${i}">
+  const filtered = group ? data.filter(h => h.group === group) : data;
+  const startIdx = group ? data.indexOf(filtered[0]) : 0;
+
+  el.innerHTML = filtered.map((h, i) => `
+    <div class="highlight-card" data-idx="${startIdx + i}">
       <div class="highlight-img-wrap">
         <img src="${h.image}" alt="${esc(h.alt || h.name)}" loading="lazy">
       </div>
@@ -260,9 +262,10 @@ async function renderHighlights(sel) {
     </div>`).join('');
 
   el.querySelectorAll('.highlight-card').forEach(card => {
-    card.addEventListener('click', () => openLightbox(_highlightData[card.dataset.idx]));
+    card.addEventListener('click', () => openLightbox(data[card.dataset.idx]));
   });
 
+  _highlightData = data;
   ensureLightbox();
   wireGalleryArrows(el);
 }

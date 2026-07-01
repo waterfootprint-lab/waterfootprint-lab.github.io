@@ -609,7 +609,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 .highlights-list::-webkit-scrollbar-thumb:hover { background: var(--crimson); }
 
 .highlight-card {
-  flex: 0 0 340px;
+  flex: 0 0 460px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;

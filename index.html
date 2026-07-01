@@ -70,19 +70,34 @@
   <section class="section section--shaded">
     <div class="wrap">
       <span class="section-label">Research Highlights</span>
-      <h2>Contributions from the Team Members:</h2>
-      <p>Recent figures and findings from the lab's published work — scroll or click an arrow to browse, click any entry for the full caption and a link to the paper.</p>
-      <div class="highlights-scroll-wrap" style="margin-top:1.8rem;">
+      <h2>From the Lab</h2>
+
+      <p style="font-size:0.95rem;color:var(--gray-mid);margin-bottom:0.6rem;font-weight:bold;">Principal Investigator</p>
+      <div class="highlights-scroll-wrap" style="margin-bottom:2.5rem;">
         <button class="gallery-arrow prev" aria-label="Scroll left">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
-        <div class="highlights-list" id="highlights-grid">
-          <p class="state-msg">Loading highlights…</p>
+        <div class="highlights-list" id="highlights-pi">
+          <p class="state-msg">Loading…</p>
         </div>
         <button class="gallery-arrow next" aria-label="Scroll right">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
         </button>
       </div>
+
+      <p style="font-size:0.95rem;color:var(--gray-mid);margin-bottom:0.6rem;font-weight:bold;">Ph.D. Researchers</p>
+      <div class="highlights-scroll-wrap">
+        <button class="gallery-arrow prev" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="highlights-list" id="highlights-students">
+          <p class="state-msg">Loading…</p>
+        </div>
+        <button class="gallery-arrow next" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
     </div>
   </section>
 
@@ -129,7 +144,8 @@
 <script src="js/main.js"></script>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  renderHighlights('#highlights-grid');
+  renderHighlights('#highlights-pi', 'pi');
+  renderHighlights('#highlights-students', 'student');
 </script>
 </body>
 </html>
