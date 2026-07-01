@@ -1,16 +1,88 @@
 [
   {
-    "date": "2026-06-29",
-    "title": "The Water Footprint Lab website is live",
-    "body": "We've launched this site to share our research, publications, and openings. More projects and team profiles are on the way — check back often.",
-    "tag": "Announcement",
-    "link": ""
+    "date": "2026-05-15",
+    "title": "Congratulations — Mahlet Melaku and Betelhem Wondimneh Demeke graduate!",
+    "body": "The Water Footprint Lab celebrates Mahlet Melaku and Betelhem Wondimneh Demeke on the successful completion of their Ph.D. degrees this Spring 2026. We are proud of their achievements and wish them the very best in their careers.",
+    "tag": "Graduation"
   },
   {
-    "date": "2026-06-29",
-    "title": "Welcome to our Ph.D. students",
-    "body": "The lab welcomes Habtamu Tamiru, Mahlet Melaku, Betelhem Demeke, Fitsume Teshome, and Swatantra Sharma. We're glad to have you on the team.",
-    "tag": "Lab News",
-    "link": ""
+    "date": "2026-04-03",
+    "title": "New paper published — Global water footprint of crop production over five decades",
+    "body": "Congratulations to Betelhem Wondimneh Demeke and co-authors! Their paper analyzing global spatiotemporal trends in the water footprint of crop production from 1972 to 2018 has been published in Scientific Reports.",
+    "tag": "Publication",
+    "link": "https://www.nature.com/articles/s41598-026-46362-8"
+  },
+  {
+    "date": "2026-03-01",
+    "title": "New paper published — Improving annual streamflow estimates using Budyko parameterization",
+    "body": "Congratulations to Habtamu Tamiru and co-authors! Their study developing a machine-learning-based Budyko parameterization linked to catchment attributes — improving annual ET and streamflow predictions across gauged and ungauged basins — has been published in the Journal of Hydrology X.",
+    "tag": "Publication",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2589915526000039"
+  },
+  {
+    "date": "2026-02-20",
+    "title": "New paper published — Uncertainty of water footprint estimates caused by harvested area inputs",
+    "body": "Congratulations to Betelhem Wondimneh Demeke and co-authors! Their study on how harvested area variability propagates into global water footprint uncertainty for rice, maize, wheat, and soybeans has been published in Environmental Research: Water.",
+    "tag": "Publication",
+    "link": "https://iopscience.iop.org/article/10.1088/3033-4942/ae441e"
+  },
+  {
+    "date": "2025-11-03",
+    "title": "New paper published — Adsorptive removal of PFAS using activated carbon",
+    "body": "Congratulations to Mahlet Melaku Kebede and co-authors! Their study comparing GAC, PAC, and ball-milled colloidal activated carbon for PFAS removal has been published in ACS ES&T Water.",
+    "tag": "Publication",
+    "link": "https://pubs.acs.org/doi/full/10.1021/acsestwater.5c00641"
+  },
+  {
+    "date": "2025-01-15",
+    "title": "New paper published — Mapping PFAS footprint from cosmetics and carpets across the US",
+    "body": "Congratulations to Mahlet Melaku Kebede and co-authors! Their study providing state- and county-level PFAS mass estimations from consumer products has been published in ACS ES&T Water.",
+    "tag": "Publication",
+    "link": "https://pubs.acs.org/doi/10.1021/acsestwater.4c00198"
+  },
+  {
+    "date": "2024-12-20",
+    "title": "Congratulations — Fitsume Teshome Wolkeba graduates!",
+    "body": "The Water Footprint Lab congratulates Fitsume Teshome Wolkeba on the successful defense and completion of his Ph.D. degree in December 2024. Fitsume has published several papers during his Ph.D. We wish him continued success.",
+    "tag": "Graduation"
+  },
+  {
+    "date": "2024-11-05",
+    "title": "New paper published — Trends and environmental impacts of virtual water trade",
+    "body": "Congratulations to Mahlet Melaku Kebede, Betelhem Wondimneh Demeke, and Dr. Mekonnen! Their co-authored review examining the trends, drivers, and environmental impacts of virtual water trade has been published in Nature Reviews Earth & Environment.",
+    "tag": "Publication",
+    "link": "https://www.nature.com/articles/s43017-024-00605-2"
+  },
+  {
+    "date": "2024-07-02",
+    "title": "New paper published — Indicator metrics introduce ambiguities in water scarcity estimates",
+    "body": "Congratulations to Fitsume Teshome Wolkeba, Dr. Mekonnen and co-authors! Their study showing that estimates of global water scarcity vary tenfold depending on the choice of indicator and temporal aggregation has been published in Scientific Reports.",
+    "tag": "Publication",
+    "link": "https://www.nature.com/articles/s41598-024-65155-5"
+  },
+  {
+    "date": "2024-01-15",
+    "title": "Welcome — Habtamu Tamiru joins the lab!",
+    "body": "The Water Footprint Lab warmly welcomes Habtamu Tamiru, who joins as a Ph.D. student in Spring 2024. His research focuses on large-scale hydrologic prediction integrating machine learning and process-based modeling.",
+    "tag": "New Member"
+  },
+  {
+    "date": "2023-12-08",
+    "title": "New paper published — Evaluation of gridded precipitation data in water availability modeling in CONUS",
+    "body": "Congratulations to Fitsume Teshome Wolkeba and Dr. Mekonnen! Their study evaluating five gridded precipitation datasets against CONUS streamflow gauges (1979–2016) has been published in the Journal of Hydrology.",
+    "tag": "Publication",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022169423015172"
+  },
+  {
+    "date": "2022-08-20",
+    "title": "Welcome — Swatantra Kumar Sharma joins the lab!",
+    "body": "The Water Footprint Lab warmly welcomes Swatantra Kumar Sharma, who joins as a Ph.D. student in Fall 2022. His research integrates remote sensing, hydrologic modeling, and machine learning to improve estimation of evapotranspiration and agricultural water productivity.",
+    "tag": "New Member"
+  },
+  {
+    "date": "2021-08-20",
+    "title": "Welcome — Mahlet Melaku, Fitsume Teshome, and Betelhem Demeke join the lab!",
+    "body": "The Water Footprint Lab is delighted to welcome three new Ph.D. students in Fall 2021 — Mahlet Melaku Kebede, Fitsume Teshome Wolkeba, and Betelhem Wondimneh Demeke. We are excited to have them on board!",
+    "tag": "New Member"
   }
 ]

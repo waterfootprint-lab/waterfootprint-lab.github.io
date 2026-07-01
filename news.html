@@ -6,6 +6,52 @@
 <title>News — Water Footprint Lab</title>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .news-year-group { margin-bottom: 2.8rem; }
+  .news-year-label {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--crimson);
+    border-bottom: 2px solid var(--crimson);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .news-item {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.2rem;
+    align-items: start;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-tag-badge {
+    font-size: 0.72rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.3em 0.75em;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-top: 0.15rem;
+  }
+  .tag-publication { background: #EBF2FA; color: #124080; }
+  .tag-graduation  { background: #E6F4EA; color: #1E6B2E; }
+  .tag-new-member  { background: #FFF3E0; color: #8A4A00; }
+  .tag-announcement { background: #F3E7D2; color: #7A5418; }
+
+  .news-content h3 {
+    font-size: 1.1rem;
+    color: var(--black);
+    margin-bottom: 0.35rem;
+    line-height: 1.3;
+  }
+  .news-content h3 a { color: var(--blue); text-decoration: none; }
+  .news-content h3 a:hover { text-decoration: underline; }
+  .news-content p { color: var(--gray-dark); font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .news-date { font-size: 0.82rem; color: var(--gray-mid); font-family: var(--font-mono); }
+</style>
 </head>
 <body>
 
@@ -13,9 +59,9 @@
   <div class="nav">
     <a class="brand" href="index.html">
       <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-        <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#124080"/>
-        <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#1A5FA8" stroke-width="2.5" stroke-linecap="round"/>
-        <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#5B9FD4" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#9E1B32"/>
+        <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+        <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
       </svg>
       <span>
         <span class="brand-name">Water Footprint Lab</span>
@@ -40,15 +86,13 @@
   <section class="page-hero">
     <div class="wrap">
       <h1>News</h1>
-      <p>Announcements, papers, and milestones from the lab</p>
+      <p>Lab milestones, new members, graduations, and published papers</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap">
-      <div class="news-list" id="news-list">
-        <p class="state-msg">Loading news…</p>
-      </div>
+    <div class="wrap" id="news-container">
+      <p class="state-msg">Loading news…</p>
     </div>
   </section>
 </main>
@@ -83,8 +127,57 @@
 
 <script src="js/main.js"></script>
 <script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  renderNews('#news-list');
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+function tagClass(tag) {
+  if (!tag) return 'tag-announcement';
+  const t = tag.toLowerCase();
+  if (t.includes('pub')) return 'tag-publication';
+  if (t.includes('grad')) return 'tag-graduation';
+  if (t.includes('member')) return 'tag-new-member';
+  return 'tag-announcement';
+}
+
+function fmtDate(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+async function renderNewsByYear() {
+  const el = document.getElementById('news-container');
+  const data = await loadJSON('data/news.json');
+  if (!data || data.length === 0) { el.innerHTML = '<p class="state-msg">No news yet.</p>'; return; }
+
+  const sorted = [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Group by year
+  const byYear = {};
+  sorted.forEach(n => {
+    const y = new Date(n.date + 'T00:00:00').getFullYear();
+    if (!byYear[y]) byYear[y] = [];
+    byYear[y].push(n);
+  });
+
+  const years = Object.keys(byYear).sort((a, b) => b - a);
+
+  el.innerHTML = years.map(year => `
+    <div class="news-year-group">
+      <div class="news-year-label">${year}</div>
+      ${byYear[year].map(n => `
+        <div class="news-item">
+          <span class="news-tag-badge ${tagClass(n.tag)}">${n.tag || 'News'}</span>
+          <div class="news-content">
+            <h3>${n.link
+              ? `<a href="${n.link}" target="_blank" rel="noopener">${n.title}</a>`
+              : n.title}</h3>
+            <p>${n.body}</p>
+            <div class="news-date">${fmtDate(n.date)}</div>
+          </div>
+        </div>`).join('')}
+    </div>`).join('');
+}
+
+renderNewsByYear();
 </script>
 </body>
 </html>
