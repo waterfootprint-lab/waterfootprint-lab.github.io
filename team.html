@@ -30,13 +30,13 @@
   margin: 0 auto;
 }
 
-/* Header area: photo + name block that overlaps the banner */
+/* Header area: photo overlaps banner, name sits cleanly below on white */
 .pi-card-header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 2rem;
-  padding: 0 2.4rem;
-  margin-top: -70px;   /* pulls photo up over the banner */
+  padding: 0 2.4rem 1.4rem;
+  margin-top: -75px;
   flex-wrap: wrap;
 }
 
@@ -56,10 +56,11 @@
   object-fit: cover;
 }
 
+/* Name block sits on the white area below the banner */
 .pi-name-block {
-  padding-bottom: 1rem;
   flex: 1;
   min-width: 200px;
+  padding-top: 80px; /* pushes text down below the crimson band */
 }
 .pi-name-block h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -312,6 +313,27 @@ async function renderPICard() {
         <div class="pi-uni">${pi.title}</div>
       </div>
     </div>
+
+    <!-- Stats strip -->
+    <div class="pi-stats">
+      <div class="pi-stat">
+        <span class="pi-stat-num">70+</span>
+        <span class="pi-stat-lbl">Peer-reviewed papers</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">38,000+</span>
+        <span class="pi-stat-lbl">Citations</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">41</span>
+        <span class="pi-stat-lbl">h-index</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">2×</span>
+        <span class="pi-stat-lbl">Clarivate Highly Cited Researcher</span>
+      </div>
+    </div>
+
     <!-- Bio (left) + Education (right) -->
     <div class="pi-card-body">
       <div class="pi-bio-col">
