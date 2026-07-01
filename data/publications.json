@@ -1,51 +1,146 @@
-[
-  {
-    "year": 2024,
-    "title": "Indicator metrics and temporal aggregations introduce ambiguities in water scarcity estimates",
-    "authors": "Mekonnen, M.M. et al.",
-    "venue": "Scientific Reports",
-    "link": "https://www.nature.com/articles/s41598-024-65155-5"
-  },
-  {
-    "year": 2020,
-    "title": "Sustainability of the blue water footprint of crops",
-    "authors": "Mekonnen, M.M., Hoekstra, A.Y.",
-    "venue": "Advances in Water Resources, 143:103679",
-    "link": "#"
-  },
-  {
-    "year": 2020,
-    "title": "Water scarcity and fish imperilment driven by beef production",
-    "authors": "Richter, B.D., Bartak, D., Caldwell, P., ... Mekonnen, M.M., et al.",
-    "venue": "Nature Sustainability",
-    "link": "#"
-  },
-  {
-    "year": 2020,
-    "title": "Water productivity benchmarks: The case of maize and soybean in Nebraska",
-    "authors": "Mekonnen, M.M., Hoekstra, A.Y., Neale, C.M.U., Ray, C., Yang, H.S.",
-    "venue": "Agricultural Water Management, 234:106122",
-    "link": "#"
-  },
-  {
-    "year": 2019,
-    "title": "Limits to the world's green water resources for food, feed, fibre, timber and bio-energy",
-    "authors": "Schyns, J.F., Hoekstra, A.Y., Booij, M.J., Hogeboom, R.J., Mekonnen, M.M.",
-    "venue": "Proceedings of the National Academy of Sciences, 116(1), 4893-4898",
-    "link": "#"
-  },
-  {
-    "year": 2016,
-    "title": "Four billion people facing severe water scarcity",
-    "authors": "Mekonnen, M.M., Hoekstra, A.Y.",
-    "venue": "Science Advances",
-    "link": "https://doi.org/10.1126/sciadv.1500323"
-  },
-  {
-    "year": 2011,
-    "title": "The water footprint of humanity",
-    "authors": "Hoekstra, A.Y., Mekonnen, M.M.",
-    "venue": "Proceedings of the National Academy of Sciences",
-    "link": "https://www.pnas.org/doi/full/10.1073/pnas.1109936109"
-  }
-]
+{
+  "pi_top5": [
+    {
+      "year": 2011,
+      "title": "The green, blue and grey water footprint of crops and derived crop products",
+      "authors": "Mekonnen, M.M. & Hoekstra, A.Y.",
+      "venue": "Hydrology and Earth System Sciences",
+      "volume": "15(5), 1577–1600",
+      "note": "Highly Cited — 7,000+ citations",
+      "doi": "10.5194/hess-15-1577-2011",
+      "link": "https://hess.copernicus.org/articles/15/1577/2011/"
+    },
+    {
+      "year": 2012,
+      "title": "The water footprint of humanity",
+      "authors": "Hoekstra, A.Y. & Mekonnen, M.M.",
+      "venue": "Proceedings of the National Academy of Sciences (PNAS)",
+      "volume": "109(9), 3232–3237",
+      "note": "Highly Cited — 5,000+ citations",
+      "doi": "10.1073/pnas.1109936109",
+      "link": "https://www.pnas.org/doi/full/10.1073/pnas.1109936109"
+    },
+    {
+      "year": 2012,
+      "title": "A global assessment of the water footprint of farm animal products",
+      "authors": "Mekonnen, M.M. & Hoekstra, A.Y.",
+      "venue": "Ecosystems",
+      "volume": "15, 401–415",
+      "note": "Highly Cited — 3,500+ citations",
+      "doi": "10.1007/s10021-011-9517-8",
+      "link": "https://link.springer.com/article/10.1007/s10021-011-9517-8"
+    },
+    {
+      "year": 2016,
+      "title": "Four billion people facing severe water scarcity",
+      "authors": "Mekonnen, M.M. & Hoekstra, A.Y.",
+      "venue": "Science Advances",
+      "volume": "2(2), e1500323",
+      "note": "Highly Cited — 4,000+ citations",
+      "doi": "10.1126/sciadv.1500323",
+      "link": "https://www.science.org/doi/10.1126/sciadv.1500323"
+    },
+    {
+      "year": 2012,
+      "title": "Global monthly water scarcity: Blue water footprints versus blue water availability",
+      "authors": "Hoekstra, A.Y., Mekonnen, M.M., Chapagain, A.K., Mathews, R.E. & Richter, B.D.",
+      "venue": "PLOS ONE",
+      "volume": "7(2), e32688",
+      "note": "Highly Cited — 2,000+ citations",
+      "doi": "10.1371/journal.pone.0032688",
+      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0032688"
+    }
+  ],
+  "student_papers": [
+    {
+      "year": 2026,
+      "title": "Global spatially detailed water footprint of crop production over five decades",
+      "authors": "Demeke, B.W., Mekonnen, M.M., Brauman, K.A., Magliocca, N. & Moradkhani, H.",
+      "student": "Betelhem Wondimneh Demeke",
+      "venue": "Scientific Reports",
+      "volume": "16",
+      "doi": "10.1038/s41598-026-46362-8",
+      "link": "https://www.nature.com/articles/s41598-026-46362-8"
+    },
+    {
+      "year": 2026,
+      "title": "Uncertainty of water footprint estimates caused by harvested area inputs",
+      "authors": "Demeke, B.W., Mekonnen, M.M., Brauman, K.A. & Magliocca, N.",
+      "student": "Betelhem Wondimneh Demeke",
+      "venue": "Environmental Research: Water",
+      "volume": "2, 015006",
+      "doi": "10.1088/3033-4942/ae441e",
+      "link": "https://iopscience.iop.org/article/10.1088/3033-4942/ae441e"
+    },
+    {
+      "year": 2026,
+      "title": "Improving annual streamflow estimates using Budyko parameterization driven by catchment attributes",
+      "authors": "Tamiru, H., Mekonnen, M.M. & Kumar, M.",
+      "student": "Habtamu Tamiru",
+      "venue": "Journal of Hydrology X",
+      "volume": "30, 100216",
+      "doi": "10.1016/j.hydroa.2026.100216",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2589915526000039"
+    },
+    {
+      "year": 2026,
+      "title": "Water scarcity indicator based on GRACE derived total water storage for fast water scarcity monitoring",
+      "authors": "Wolkeba, F.T., Mekonnen, M.M. & Brauman, K.A.",
+      "student": "Fitsume Teshome Wolkeba",
+      "venue": "Scientific Reports",
+      "volume": "16",
+      "doi": "",
+      "link": "https://www.nature.com/articles/s41598-026-46362-8"
+    },
+    {
+      "year": 2025,
+      "title": "Adsorptive removal of PFAS from aqueous solutions using GAC, PAC and ball-milled colloidal activated carbon: Characterizing efficiency, kinetics, and mechanisms",
+      "authors": "Kebede, M.M., Al Masud, Md.A., Ortbal, S., Shin, W.S., Mekonnen, M.M., Clement, T.P. & Terry, L.G.",
+      "student": "Mahlet Melaku Kebede",
+      "venue": "ACS ES&T Water",
+      "volume": "5(11), 6554–6566",
+      "doi": "10.1021/acsestwater.5c00641",
+      "link": "https://pubs.acs.org/doi/full/10.1021/acsestwater.5c00641"
+    },
+    {
+      "year": 2025,
+      "title": "Mapping per- and polyfluoroalkyl substance footprint from cosmetics and carpets across the continental United States",
+      "authors": "Kebede, M.M., Terry, L.G., Clement, T.P. & Mekonnen, M.M.",
+      "student": "Mahlet Melaku Kebede",
+      "venue": "ACS ES&T Water",
+      "volume": "4, 198",
+      "doi": "10.1021/acsestwater.4c00198",
+      "link": "https://pubs.acs.org/doi/10.1021/acsestwater.4c00198"
+    },
+    {
+      "year": 2024,
+      "title": "Trends and environmental impacts of virtual water trade",
+      "authors": "Mekonnen, M.M., Kebede, M.M., Demeke, B.W., Carr, J.A., Chapagain, A., Dalin, C., Debaere, P., D'Odorico, P., Marston, L., Ray, C., Rosa, L. & Zhuo, L.",
+      "student": "Mahlet Melaku Kebede · Betelhem Wondimneh Demeke",
+      "venue": "Nature Reviews Earth & Environment",
+      "volume": "5(12), 890–905",
+      "doi": "10.1038/s43017-024-00605-2",
+      "link": "https://www.nature.com/articles/s43017-024-00605-2"
+    },
+    {
+      "year": 2024,
+      "title": "Indicator metrics and temporal aggregations introduce ambiguities in water scarcity estimates",
+      "authors": "Wolkeba, F.T., Mekonnen, M.M., Brauman, K.A. & Kumar, M.",
+      "student": "Fitsume Teshome Wolkeba",
+      "venue": "Scientific Reports",
+      "volume": "14, 15182",
+      "doi": "10.1038/s41598-024-65155-5",
+      "link": "https://www.nature.com/articles/s41598-024-65155-5"
+    },
+    {
+      "year": 2024,
+      "title": "Evaluation of gridded precipitation data in water availability modeling in CONUS",
+      "authors": "Wolkeba, F.T. & Mekonnen, M.M.",
+      "student": "Fitsume Teshome Wolkeba",
+      "venue": "Journal of Hydrology",
+      "volume": "628, 130575",
+      "doi": "10.1016/j.jhydrol.2023.130575",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0022169423015172"
+    }
+  ]
+}
