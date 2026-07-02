@@ -66,21 +66,7 @@
       },
       "status": "Graduated"
     },
-    {
-      "name": "Mahlet Melaku Kebede",
-      "role": "Ph.D. Student (2021-2026)",
-      "focus": "Research focus: PFAS (per- and polyfluoroalkyl substances) in water systems, adsorption treatment technologies, and water quality assessment.",
-      "photo": "assets/img/mahlet-melaku.svg",
-      "links": {
-        "email": "mkebede@crimson.ua.edu",
-        "scholar": "https://scholar.google.com/citations?user=MO6FVHQAAAAJ&hl=en",
-        "linkedin": "https://www.linkedin.com/in/mahlet-melaku-kebede-1480769b/",
-        "orcid": "https://orcid.org/0000-0002-3534-6007",
-        "website": "",
-        "github": ""
-      },
-      "status": "Graduated"
-    },
+
     {
       "name": "Fitsume Teshome Wolkeba",
       "role": "Ph.D. Student (2021-2024)",
@@ -95,6 +81,23 @@
         "github": "https://github.com/Zprivf"
       },
       "status": "Graduated"
+    },
+
+    {
+      "name": "Mahlet Melaku Kebede",
+      "role": "Ph.D. Student (2021-2026)",
+      "focus": "Research focus: PFAS (per- and polyfluoroalkyl substances) in water systems, adsorption treatment technologies, and water quality assessment.",
+      "photo": "assets/img/mahlet-melaku.svg",
+      "links": {
+        "email": "mkebede@crimson.ua.edu",
+        "scholar": "https://scholar.google.com/citations?user=MO6FVHQAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/mahlet-melaku-kebede-1480769b/",
+        "orcid": "https://orcid.org/0000-0002-3534-6007",
+        "website": "",
+        "github": ""
+      },
+      "status": "Graduated"
     }
+
   ]
 }
