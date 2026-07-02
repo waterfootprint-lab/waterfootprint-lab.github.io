@@ -78,6 +78,8 @@ let _studentData = [];
 const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>';
 const SCHOLAR_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11.5V17c0 1 2.7 3 6 3s6-2 6-3v-5.5"/></svg>';
 const LINKEDIN_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.04 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8.25h4V23h-4V8.25zM8.5 8.25h3.83v2.01h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-7.04c0-1.68-.03-3.84-2.34-3.84-2.34 0-2.7 1.83-2.7 3.72V23h-4V8.25z"/></svg>';
+const ORCID_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM8.16 5.6a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zm-.93 3.75h1.86V18.4H7.23V9.35zm4.03 0h4.98c4.75 0 6.45 3.5 6.45 4.52 0 2.4-1.87 4.53-6.45 4.53h-4.98V9.35zm1.87 1.6v5.86h2.8c2.93 0 4.4-1.23 4.4-2.93s-1.47-2.93-4.4-2.93h-2.8z"/></svg>';
+const WEBSITE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
 const INFO_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>';
 
 async function renderStudents(sel) {
@@ -99,6 +101,8 @@ async function renderStudents(sel) {
         ${s.links?.email ? `<a href="mailto:${s.links.email}" title="Email" onclick="event.stopPropagation()">${MAIL_ICON}</a>` : ''}
         ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener" title="Google Scholar" onclick="event.stopPropagation()">${SCHOLAR_ICON}</a>` : ''}
         ${s.links?.linkedin ? `<a href="${s.links.linkedin}" target="_blank" rel="noopener" title="LinkedIn" onclick="event.stopPropagation()">${LINKEDIN_ICON}</a>` : ''}
+        ${s.links?.orcid ? `<a href="${s.links.orcid}" target="_blank" rel="noopener" title="ORCID" onclick="event.stopPropagation()">${ORCID_ICON}</a>` : ''}
+        ${s.links?.website ? `<a href="${s.links.website}" target="_blank" rel="noopener" title="Personal website" onclick="event.stopPropagation()">${WEBSITE_ICON}</a>` : ''}
       </div>
     </div>`).join('');
 
@@ -141,6 +145,8 @@ function openStudentModal(s) {
     ${s.links?.email ? `<a href="mailto:${s.links.email}">Email</a>` : ''}
     ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>` : ''}
     ${s.links?.linkedin ? `<a href="${s.links.linkedin}" target="_blank" rel="noopener">LinkedIn</a>` : ''}
+    ${s.links?.orcid ? `<a href="${s.links.orcid}" target="_blank" rel="noopener">ORCID</a>` : ''}
+    ${s.links?.website ? `<a href="${s.links.website}" target="_blank" rel="noopener">Website</a>` : ''}
   `;
   overlay.classList.add('open');
 }

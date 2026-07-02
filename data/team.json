@@ -14,7 +14,9 @@
       "profile": "https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/",
       "scholar": "https://scholar.google.com/citations?user=REPLACE_WITH_SCHOLAR_ID",
       "linkedin": "",
-      "email": "mesfin.mekonnen@ua.edu"
+      "email": "mesfin.mekonnen@ua.edu",
+      "orcid": "",
+      "website": ""
     }
   },
   "students": [
@@ -26,11 +28,12 @@
       "links": {
         "email": "habtamu@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=XXXX",
-        "linkedin": "https://www.linkedin.com/in/habtamu-tamiru-hydrologist/"
+        "linkedin": "https://www.linkedin.com/in/habtamu-tamiru-hydrologist/",
+        "orcid": "",
+        "website": ""
       },
       "status": "Ongoing"
     },
-
     {
       "name": "Swatantra Kumar Sharma",
       "role": "Ph.D. Student (Since 2022)",
@@ -39,37 +42,40 @@
       "links": {
         "email": "sksharma@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=X5Q2yt8AAAAJ&hl=en",
-        "linkedin": "https://www.linkedin.com/in/swatantra-kumar-sharma-4960b6b9/"
+        "linkedin": "https://www.linkedin.com/in/swatantra-kumar-sharma-4960b6b9/",
+        "orcid": "",
+        "website": ""
       },
       "status": "Ongoing"
     },
-
     {
       "name": "Betelhem Wondimneh Demeke",
       "role": "Ph.D. Student (2021-2026)",
-      "focus": "Focus areas of my research are crop water footprints, virtual water trade, global water resources management,  water and food security. ",
+      "focus": "Focus areas of my research are crop water footprints, virtual water trade, global water resources management, water and food security.",
       "photo": "assets/img/betelhem-demeke.svg",
       "links": {
         "email": "bwdemeke@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=dW1UQNEAAAAJ&hl=en",
-        "linkedin": "https://www.linkedin.com/in/betelhem-wondimneh-4aa37b131/"
+        "linkedin": "https://www.linkedin.com/in/betelhem-wondimneh-4aa37b131/",
+        "orcid": "",
+        "website": ""
       },
       "status": "Graduated"
     },
-
     {
       "name": "Mahlet Melaku Kebede",
       "role": "Ph.D. Student (2021-2026)",
-      "focus": "Research focus: ",
+      "focus": "Research focus: PFAS (per- and polyfluoroalkyl substances) in water systems, adsorption treatment technologies, and water quality assessment.",
       "photo": "assets/img/mahlet-melaku.svg",
       "links": {
         "email": "mkebede@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=MO6FVHQAAAAJ&hl=en",
-        "linkedin": "https://www.linkedin.com/in/mahlet-melaku-kebede-1480769b/"
+        "linkedin": "https://www.linkedin.com/in/mahlet-melaku-kebede-1480769b/",
+        "orcid": "",
+        "website": ""
       },
       "status": "Graduated"
     },
-
     {
       "name": "Fitsume Teshome Wolkeba",
       "role": "Ph.D. Student (2021-2024)",
@@ -79,7 +85,8 @@
         "email": "fwolkeba@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=K_swzOkAAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/fitsume-teshome-w/",
-        "orcid": "https://orcid.org/0000-0001-7859-3879"
+        "orcid": "https://orcid.org/0000-0001-7859-3879",
+        "website": "https://zprivf.github.io/website/"
       },
       "status": "Graduated"
     }
