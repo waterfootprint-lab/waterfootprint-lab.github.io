@@ -216,7 +216,7 @@ async function renderPublications() {
   let html = '';
 
   // ── Section 1: Top 5 most cited PI papers ──
-  html += `<div class="pub-section-title">Principal Investigator — Most Cited Papers <span>Clarivate Highly Cited Researcher 2021 &amp; 2022</span></div>`;
+//  html += `<div class="pub-section-title">Principal Investigator — Most Cited Papers <span>Clarivate Highly Cited Researcher 2021 &amp; 2022</span></div>`;
   const pi = [...data.pi_top5].sort((a,b) => b.year - a.year);
   pi.forEach((p, i) => { html += renderPubItem(p, i + 1); });
 
