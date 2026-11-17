@@ -116,22 +116,30 @@ async function renderProjects(sel) {
   const data = await loadJSON('data/projects.json');
   if (!data || data.length === 0) { el.innerHTML = '<p class="state-msg">No projects listed yet.</p>'; return; }
   el.innerHTML = data.map(p => {
-    const meta = [
-      p.funding ? `<strong>Funding:</strong> ${esc(p.funding)}` : '',
-      p.period  ? `<strong>Period:</strong> ${esc(p.period)}` : ''
-    ].filter(Boolean).join(' &nbsp;|&nbsp; ');
+    const people = p.investigators || p.people || [];
+    const facts = [
+      p.funding ? `<div class="project-fact"><dt>Funding</dt><dd>${esc(p.funding)}</dd></div>` : '',
+      p.period  ? `<div class="project-fact"><dt>Period</dt><dd>${esc(p.period)}</dd></div>` : '',
+      p.status  ? `<div class="project-fact"><dt>Status</dt><dd>${esc(p.status)}</dd></div>` : '',
+      people.length ? `<div class="project-fact"><dt>Investigators</dt><dd>${people.map(esc).join('<br>')}</dd></div>` : ''
+    ].join('');
     const pubs = (p.publications || []).map(x => `
-        <li>${esc(x.cite)} | ${x.link ? `<a href="${x.link}" target="_blank" rel="noopener">${esc(x.title)}</a>` : esc(x.title)} | <em>${esc(x.venue)}</em></li>`).join('');
+          <li>${esc(x.cite)}. ${x.link ? `<a href="${x.link}" target="_blank" rel="noopener">${esc(x.title)}</a>` : esc(x.title)}. <em>${esc(x.venue)}</em>.</li>`).join('');
     return `
-    <div class="project-item">
-      <h3>${esc(p.title)}</h3>
-      ${meta ? `<div class="project-meta">${meta}</div>` : ''}
-      ${p.status ? `<div class="project-meta"><strong>Status:</strong> ${esc(p.status)}</div>` : ''}
-      <p>${esc(p.summary)}</p>
-      ${p.people && p.people.length ? `<div class="project-meta"><strong>People:</strong> ${p.people.map(esc).join('; ')}</div>` : ''}
-      ${pubs ? `<div class="project-pubs"><strong>Selected publications</strong><ul>${pubs}</ul></div>` : ''}
-      ${p.link ? `<a class="project-more" href="${p.link}" target="_blank" rel="noopener">Learn more →</a>` : ''}
-    </div>`;
+    <article class="project-card">
+      <header class="project-head">
+        <h3>${esc(p.title)}</h3>
+        ${p.period ? `<span class="project-period">${esc(p.period)}</span>` : ''}
+      </header>
+      <div class="project-body">
+        <div class="project-main">
+          <p>${esc(p.summary)}</p>
+          ${pubs ? `<div class="project-pubs"><h4>Selected Publications</h4><ul>${pubs}</ul></div>` : ''}
+          ${p.link ? `<a class="project-more" href="${p.link}" target="_blank" rel="noopener">Learn more →</a>` : ''}
+        </div>
+        ${facts ? `<dl class="project-facts">${facts}</dl>` : ''}
+      </div>
+    </article>`;
   }).join('');
 }
 
