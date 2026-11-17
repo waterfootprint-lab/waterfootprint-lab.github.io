@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Water Security Lab</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#124080"/>
+        <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#1A5FA8" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#5B9FD4" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">Water Security Lab</span>
+        <span class="brand-sub">University of Alabama</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="positions.html">Join Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Research</h1>
+      <p>Research themes of the Water Security Lab</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p>The Water Security Lab studies how human activities, environmental change, and hydrologic processes interact to shape water availability, use, quality, and risk. Our research spans five interconnected areas.</p>
+    </div>
+  </section>
+
+  <section class="section section--shaded">
+    <div class="wrap">
+      <span class="section-label">Research Areas</span>
+      <div class="questions">
+        <div class="question-item">
+          <span class="question-num">01</span>
+          <h3>Water Footprints &amp; Sustainable Water Use</h3>
+          <p>Quantifying water use and its drivers across agricultural, food, livestock, and economic systems to identify opportunities for more sustainable water management.</p>
+        </div>
+        <div class="question-item">
+          <span class="question-num">02</span>
+          <h3>Water Scarcity, Drought &amp; Low-Flow Risk</h3>
+          <p>Assessing water availability, drought, low-flow conditions, and associated risks to people, ecosystems, and critical sectors.</p>
+        </div>
+        <div class="question-item">
+          <span class="question-num">03</span>
+          <h3>Groundwater &amp; Surface-Water Systems</h3>
+          <p>Understanding groundwater use, groundwater-surface-water interactions, and their implications for hydrologic systems and water security.</p>
+        </div>
+        <div class="question-item">
+          <span class="question-num">04</span>
+          <h3>Water-Energy-Food Systems</h3>
+          <p>Examining interactions and trade-offs among water, energy, food production, and emerging water demands.</p>
+        </div>
+        <div class="question-item">
+          <span class="question-num">05</span>
+          <h3>PFAS Footprints &amp; Water-Quality Risk</h3>
+          <p>Assessing PFAS footprints, pathways, and water-related risks across production and supply systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="section-label">Our Approaches</span>
+      <p>We combine hydrologic modeling, remote sensing, geospatial analysis, and data science to address these interconnected water-security challenges across local to global scales.</p>
+      <p><a class="btn btn-blue" href="projects.html">View our projects</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <span class="footer-name">Water Security Lab</span>
+      <p>Department of Civil, Construction & Environmental Engineering<br>The University of Alabama, Tuscaloosa, AL</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="positions.html">Join Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:mesfin.mekonnen@ua.edu">mesfin.mekonnen@ua.edu</a></li>
+        <li><a href="https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/" target="_blank" rel="noopener">UA Faculty Profile</a></li>
+        <li><a href="https://github.com/WaterFootPrint-lab" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="yr"></span> Water Security Lab, The University of Alabama</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

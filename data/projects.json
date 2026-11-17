@@ -1,38 +1,83 @@
-// [
-//   {
-//     "id": "global-water-footprint",
-//     "title": "Global Water Footprint Accounting",
-//     "summary": "Mapping the spatial and temporal patterns of freshwater consumption embedded in goods, crops, and supply chains, and tracing the drivers behind shifting demand.",
-//     "icon": "drop",
-//     "tags": ["Water Footprint", "Global Scale"],
-//     "link": "#",
-//     "status": "ongoing"
-//   },
-//   {
-//     "id": "agri-water-productivity",
-//     "title": "Agricultural Water Productivity",
-//     "summary": "Benchmarking how efficiently crops convert water into yield across regions and management practices, to identify where productivity gains are most achievable.",
-//     "icon": "crop",
-//     "tags": ["Agriculture", "Irrigation"],
-//     "link": "#",
-//     "status": "ongoing"
-//   },
-//   {
-//     "id": "water-scarcity-indicators",
-//     "title": "Water Scarcity & Risk Indicators",
-//     "summary": "Examining how the choice of indicator and temporal aggregation method changes our read on where and when water scarcity occurs — and what that means for policy.",
-//     "icon": "map",
-//     "tags": ["Water Scarcity", "Methods"],
-//     "link": "#",
-//     "status": "ongoing"
-//   },
-//   {
-//     "id": "food-energy-water-nexus",
-//     "title": "Food–Energy–Water Nexus",
-//     "summary": "Studying how water, energy, and food systems interact and compete for the same finite resources, with an eye toward sustainable trade-offs.",
-//     "icon": "network",
-//     "tags": ["Nexus", "Sustainability"],
-//     "link": "#",
-//     "status": "ongoing"
-//   }
-// ] 
+[
+  {
+    "title": "Global Water Footprint Assessment",
+    "funding": "Global Water Security Center",
+    "period": "2021–2024",
+    "status": "Ongoing research program",
+    "summary": "The Global Water Footprint Assessment research program quantifies the water resources used to support food production and consumption and examines how these patterns change across space and time. The program includes long-term assessment of global crop water footprints, initially covering 1972–2018, and has expanded to global livestock production, national water footprints of consumption, and international virtual water flows for 1972–2023. Together, these efforts provide a consistent framework for understanding historical changes in water use and the connections among production, consumption, and global trade.",
+    "people": ["Betelhem Demeke", "Mesfin Mekonnen"],
+    "publications": [
+      { "cite": "Demeke et al. (2026)", "title": "Global spatially detailed water footprint of crop production over five decades", "venue": "Scientific Reports", "link": "https://www.nature.com/articles/s41598-026-46362-8" },
+      { "cite": "Demeke et al. (2026)", "title": "Uncertainty of water footprint estimates caused by harvested area inputs", "venue": "Environmental Research: Water", "link": "https://iopscience.iop.org/article/10.1088/3033-4942/ae441e" },
+      { "cite": "Mekonnen et al. (2024)", "title": "Trends and environmental impacts of virtual water trade", "venue": "Nature Reviews Earth & Environment", "link": "https://www.nature.com/articles/s43017-024-00605-2" }
+    ],
+    "link": ""
+  },
+  {
+    "title": "Global Hydrological Modeling & Water Scarcity Assessment",
+    "funding": "Global Water Security Center",
+    "period": "2021–2024",
+    "status": "",
+    "summary": "The Global Hydrological Modeling & Water Scarcity Assessment project examines the spatial and temporal variability of freshwater availability and water scarcity at large scales. The research combines hydrological modeling with water-use information to assess how the balance between water availability and human demand varies across locations and over time. The work supports improved characterization of water scarcity and provides a hydrologic foundation for evaluating pressures on freshwater resources and broader water-security challenges.",
+    "people": ["Fitsume Wolkeba", "Mesfin Mekonnen"],
+    "publications": [
+      { "cite": "Wolkeba et al. (2026)", "title": "Water scarcity indicator based on GRACE derived total water storage for fast water scarcity monitoring", "venue": "Journal of Hydrology", "link": "https://doi.org/10.1016/j.jhydrol.2026.135280" },
+      { "cite": "Wolkeba et al. (2024)", "title": "Indicator metrics and temporal aggregations introduce ambiguities in water scarcity estimates", "venue": "Scientific Reports", "link": "https://www.nature.com/articles/s41598-024-65155-5" },
+      { "cite": "Wolkeba & Mekonnen (2024)", "title": "Evaluation of gridded precipitation data in water availability modeling in CONUS", "venue": "Journal of Hydrology", "link": "https://www.sciencedirect.com/science/article/pii/S0022169423015172" }
+    ],
+    "link": ""
+  },
+  {
+    "title": "PFAS Footprint & Water-Quality Risk Assessment",
+    "funding": "National Science Foundation, OIA RII Track-2, Award #2019561",
+    "period": "2021–2024",
+    "status": "",
+    "summary": "This project examines the sources, environmental pathways, and groundwater risks of per- and polyfluoroalkyl substances (PFAS). The research develops spatially explicit inventories of PFAS releases from diffuse consumer-product pathways and investigates PFAS fate and transport in soils and groundwater using modeling, machine learning, and laboratory experiments. The work also evaluates PFAS sorption behavior and enhanced adsorbent materials for contaminant removal. Together, these efforts connect PFAS sources, environmental processes, groundwater risk, and remediation to support more resilient water-quality management.",
+    "people": ["Mahlet Kebede", "Mesfin Mekonnen"],
+    "publications": [
+      { "cite": "Kebede et al. (2025)", "title": "Mapping per- and polyfluoroalkyl substance footprint from cosmetics and carpets across the continental United States", "venue": "ACS ES&T Water", "link": "https://pubs.acs.org/doi/10.1021/acsestwater.4c00198" },
+      { "cite": "Kebede et al. (2025)", "title": "Adsorptive removal of PFAS from aqueous solutions using GAC, PAC and ball-milled colloidal activated carbon: Characterizing efficiency, kinetics, and mechanisms", "venue": "ACS ES&T Water", "link": "https://pubs.acs.org/doi/full/10.1021/acsestwater.5c00641" }
+    ],
+    "link": ""
+  },
+  {
+    "title": "Drought Impacts and Water Management in the Upper Colorado River Basin",
+    "funding": "National Science Foundation (NSF)",
+    "period": "2022–2025",
+    "status": "",
+    "summary": "This collaborative project examined how extreme drought affects agricultural and urban communities and environmental systems in the Upper Colorado River Basin. Our research focused on quantifying the economic and environmental impacts of drought under existing water-management practices and the prior-appropriation system. The broader project investigated how coordinated reservoir operations and water-market strategies could reduce drought impacts and strengthen community resilience under changing climate extremes.",
+    "people": ["Swatantra Sharma", "Mesfin Mekonnen"],
+    "publications": [],
+    "link": ""
+  },
+  {
+    "title": "Mapping and Predicting Water Use by Concentrated Animal Feeding Operations",
+    "funding": "CIROH–NOAA",
+    "period": "2023–2025",
+    "status": "",
+    "summary": "This project developed a scalable approach for mapping Concentrated Animal Feeding Operations (CAFOs) and estimating their water consumption and withdrawals at high spatial and temporal resolution. By integrating remote sensing data and machine learning, the research addresses critical data gaps in the location, size, and water demands of livestock operations. The resulting information supports improved livestock water-use estimation and provides spatial data relevant to water-resource planning and environmental management.",
+    "people": ["Habtamu Tamiru", "Mesfin Mekonnen"],
+    "publications": [],
+    "link": ""
+  },
+  {
+    "title": "Improving Streamflow Predictions by Incorporating Water Withdrawals",
+    "funding": "CIROH–NOAA",
+    "period": "2023–2025",
+    "status": "",
+    "summary": "This project investigates how surface-water and groundwater withdrawals affect streamflow prediction, particularly during non-peak and low-flow conditions. The research compiles and characterizes water withdrawals and their sources, including surface-water bodies and groundwater aquifer systems, and evaluates where and to what extent incorporating these human water uses into hydrologic models improves streamflow prediction. The work focuses on the Mississippi Embayment, where groundwater and surface-water withdrawals are important components of the regional water balance.",
+    "people": ["Swatantra Sharma", "Mesfin Mekonnen"],
+    "publications": [],
+    "link": ""
+  },
+  {
+    "title": "Standard and Impact-Based Low-Flow and Hydrologic Drought Thresholds",
+    "funding": "CIROH–NOAA",
+    "period": "2026–2027",
+    "status": "Ongoing",
+    "summary": "This project is developing nationally consistent, observation-based thresholds for characterizing low-flow and hydrologic drought conditions across the United States. The research aims to strengthen drought monitoring, forecasting, and communication by developing standardized thresholds, evaluating forecast reliability, and linking hydrologic conditions with meaningful drought impacts. The project will provide operational guidance and reusable workflows to support more consistent and actionable low-flow and drought information.",
+    "people": ["Habtamu Tamiru", "Mesfin Mekonnen"],
+    "publications": [],
+    "link": ""
+  }
+]

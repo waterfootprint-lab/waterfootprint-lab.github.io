@@ -1,7 +1,7 @@
-# Water Footprint Lab — Lab Website
+# Water Security Lab — Lab Website
 
 Source for **https://WaterFootPrint-lab.github.io/** — the website for the
-Water Footprint Lab (PI: Dr. Mesfin Mekonnen), Department of Civil,
+Water Security Lab (PI: Dr. Mesfin Mekonnen), Department of Civil,
 Construction & Environmental Engineering, The University of Alabama.
 
 It's a plain HTML/CSS/JS site — **no build step, no Node, no framework.**
@@ -47,9 +47,10 @@ for routine updates.
 
 | To do this...                          | Edit this file                | Notes |
 |-----------------------------------------|--------------------------------|-------|
-| Add a new Ph.D. student                 | `data/team.json`              | Add an object to the `students` array. Drop a photo in `assets/img/` and point `photo` at it. |
-| Update the PI's bio / links             | `data/team.json`              | Edit the `pi` object. |
-| Add a new project                       | `data/projects.json`          | Add an object to the array. `icon` can be `drop`, `map`, `crop`, `network`, or `scale`. |
+| Add a new Ph.D. student                 | `data/team.json`              | Add an object to `students` with `"status": "current"`, `start_year`, `focus` (shown under "Research Interests"), `photo`, `links`. |
+| Move a student to Alumni                | `data/team.json`              | Set `"status": "alumni"` and add `completed` (year), `research_area`, and `position` (optional). |
+| Update the PI's bio / links             | `data/team.json`              | Edit the `pi` object. Put a CV URL in `links.cv` to show the CV button. |
+| Add a new project                       | `data/projects.json`          | Add `{ "title", "funding", "period", "status", "summary", "people": [...], "publications": [{ "cite", "title", "venue", "link" }], "link" }`. Empty fields are hidden; `link` shows "Learn more →". |
 | Post a news item / announcement         | `data/news.json`              | Add `{ "date": "YYYY-MM-DD", "title": "...", "body": "...", "tag": "...", "link": "" }`. Newest shows first automatically. |
 | Add a published paper                   | `data/publications.json`      | Add `{ "year": 2026, "title": "...", "authors": "...", "venue": "...", "link": "https://doi.org/..." }`. Sorted by year automatically; the Publications page also gets a year filter automatically. |
 | Open / close a position                 | `data/positions.json`         | Set `"status": "open"` or `"status": "closed"`. The homepage's "open positions" line updates automatically. |
@@ -95,8 +96,9 @@ python3 -m http.server 8000
 ```
 WaterFootPrint-lab.github.io/
 ├── index.html              Home — hero, research questions, PI summary, previews
-├── projects.html           Full projects grid
-├── team.html                PI profile + full student grid
+├── research.html           Research areas and approaches
+├── projects.html           Funded projects (from data/projects.json)
+├── team.html                PI profile, current researchers, alumni
 ├── news.html                Full news/announcements feed
 ├── publications.html       Full publication list with year filter
 ├── positions.html          Open positions + "contact us" fallback

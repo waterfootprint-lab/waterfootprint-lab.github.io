@@ -462,6 +462,14 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 .project-item:last-child { border-bottom: none; }
 .project-item h3 { color: var(--blue-dark); font-size: 1.15rem; margin-bottom: 0.3rem; }
 .project-item p  { color: var(--gray-dark); margin-bottom: 0.5rem; }
+.project-meta { font-size: 0.9rem; color: var(--gray-mid); margin-bottom: 0.35rem; }
+.project-meta strong { color: var(--gray-dark); }
+.project-item .project-meta + p { margin-top: 0.7rem; }
+.project-pubs { font-size: 0.9rem; color: var(--gray-dark); margin-top: 0.5rem; }
+.project-pubs ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
+.project-pubs li { margin-bottom: 0.25rem; }
+.project-pubs a { color: var(--blue); }
+.project-more { display: inline-block; margin-top: 0.6rem; font-size: 0.9rem; font-weight: bold; color: var(--crimson); }
 .project-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .tag {
   font-size: 0.75rem;
@@ -810,3 +818,42 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   margin-bottom: 0.5rem;
 }
 .contact-band .btn-outline-white:hover { background: rgba(255,255,255,0.15); }
+/* =========================================================================
+   Team — Research Interests toggle + alumni
+   ========================================================================= */
+.team-card { cursor: default; }
+.team-card:hover .team-card-name { text-decoration: none; }
+.interests-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.7rem;
+  padding: 0.35em 0.95em;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--crimson);
+  background: var(--white);
+  border: 1px solid var(--crimson);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.interests-toggle:hover,
+.interests-toggle:focus-visible { background: var(--crimson); color: var(--white); }
+.interests-toggle .caret { display: inline-block; transition: transform 0.15s; }
+.interests-toggle[aria-expanded="true"] .caret { transform: rotate(180deg); }
+.interests-panel {
+  text-align: left;
+  font-size: 0.92rem;
+  color: var(--gray-dark);
+  background: var(--white);
+  border-left: 3px solid var(--crimson);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.8rem;
+  max-width: 340px;
+}
+.interests-panel p { margin: 0; }
+.alumni-area { font-size: 0.9rem; color: var(--gray-dark); max-width: 300px; margin: 0 auto 0.5rem; }
+.alumni-position { font-size: 0.88rem; color: var(--gray-mid); margin: 0 auto 0.6rem; }
+.team-grid { align-items: start; }

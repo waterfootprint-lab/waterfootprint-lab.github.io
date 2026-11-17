@@ -1,44 +1,39 @@
 {
   "pi": {
-    "name": "Dr. Mesfin Mekonnen",
-    "title": "Assistant Professor, Civil, Construction & Environmental Engineering \u2014 The University of Alabama",
+    "name": "Mesfin Mekonnen, Ph.D.",
+    "title": "Assistant Professor, Civil, Construction & Environmental Engineering",
+    "institution": "The University of Alabama",
     "photo": "assets/img/mesfin-mekonnen.svg",
-    "bio": "Dr. Mekonnen leads the Water Footprint Lab and the broader water security research group at the University of Alabama, which he joined in 2020. He holds a Ph.D. in Water Engineering and Management from the University of Twente (the Netherlands), and previously held positions at the Daugherty Water for Food Global Institute (University of Nebraska) and as a postdoctoral researcher at the University of Twente.",
-    "bio2": "His work focuses on the relationship between human and natural systems in freshwater use \u2014 mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
-    "credentials": [
-      "Ph.D., Water Engineering & Water Management \u2014 University of Twente, 2011",
-      "M.Sc., Environmental Science & Technology \u2014 UNESCO-IHE, 2005",
-      "Affiliate, Center for Complex Hydrosystems Research \u00b7 Center for Water Quality Research \u00b7 Center for Sustainable Infrastructure"
-    ],
+    "bio": "Dr. Mekonnen leads the Water Security Lab at the University of Alabama. His research focuses on interactions between human water use and natural hydrologic systems, with emphasis on water security, water footprints, drought and low-flow vulnerability, groundwater-surface-water interactions, and water-energy-food systems. His work integrates hydrologic modeling, remote sensing, geospatial analysis, and large-scale data analysis to understand water availability, use, and sustainability.",
+    "distinction": "Clarivate Highly Cited Researcher",
     "links": {
       "profile": "https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/",
-      "scholar": "https://scholar.google.com/citations?user=REPLACE_WITH_SCHOLAR_ID",
-      "linkedin": "",
       "email": "mesfin.mekonnen@ua.edu",
-      "orcid": "",
-      "website": "",
-      "github": ""
+      "scholar": "https://scholar.google.com/citations?user=6TI3NIsAAAAJ&hl=en",
+      "researchgate": "https://www.researchgate.net/profile/Mesfin-Mekonnen",
+      "cv": ""
     }
   },
   "students": [
     {
       "name": "Habtamu Tamiru",
-      "role": "Ph.D. Student (Since 2024)",
+      "status": "current",
+      "start_year": 2024,
       "focus": "His research integrates hydrologic modeling, data assimilation, and machine learning to improve streamflow prediction and water-resource assessment.",
       "photo": "assets/img/habtamu-tamiru.svg",
       "links": {
         "email": "habtamu@crimson.ua.edu",
-        "scholar": "https://scholar.google.com/citations?user=XXXX",
+        "scholar": "",
         "linkedin": "https://www.linkedin.com/in/habtamu-tamiru-hydrologist/",
         "orcid": "https://orcid.org/0000-0002-4414-6664",
         "website": "",
         "github": "https://github.com/Habte1345"
-      },
-      "status": "Ongoing"
+      }
     },
     {
       "name": "Swatantra Kumar Sharma",
-      "role": "Ph.D. Student (Since 2022)",
+      "status": "current",
+      "start_year": 2022,
       "focus": "His research integrates remote sensing, hydrologic modeling, crop modeling, and machine learning to improve the estimation of evapotranspiration, soil moisture, irrigation water use, and agricultural water productivity. He develops scalable computational workflows using satellite observations and environmental datasets to support sustainable water resources management under climate variability and land-use change. Prior to joining The University of Alabama, he worked as a Project Research Assistant at IIT Bombay, contributing to watershed modeling and climate change impact assessments.",
       "photo": "assets/img/swatantra-sharma.svg",
       "links": {
@@ -48,12 +43,15 @@
         "orcid": "",
         "website": "",
         "github": ""
-      },
-      "status": "Ongoing"
+      }
     },
     {
       "name": "Betelhem Wondimneh Demeke",
-      "role": "Ph.D. Student (2021-2026)",
+      "status": "alumni",
+      "start_year": 2021,
+      "completed": 2026,
+      "research_area": "Crop water footprints, virtual water trade, global water resources management, and water and food security",
+      "position": "",
       "focus": "Focus areas of my research are crop water footprints, virtual water trade, global water resources management, water and food security.",
       "photo": "assets/img/betelhem-demeke.svg",
       "links": {
@@ -63,13 +61,15 @@
         "orcid": "https://orcid.org/0000-0002-6699-5034",
         "website": "",
         "github": ""
-      },
-      "status": "Graduated"
+      }
     },
-
     {
       "name": "Fitsume Teshome Wolkeba",
-      "role": "Ph.D. Student (2021-2024)",
+      "status": "alumni",
+      "start_year": 2021,
+      "completed": 2024,
+      "research_area": "Big data and machine learning for large-scale hydrological and water availability modeling",
+      "position": "",
       "focus": "Research focus: Leveraging big data and machine learning to advance large-scale hydrological and water availability modeling. Expert in bridging environmental remote sensing, data integration, and numerical modeling to integrate satellite observations into advanced physical models and capture complex water cycle dynamics.",
       "photo": "assets/img/fitsume-teshome.svg",
       "links": {
@@ -79,13 +79,15 @@
         "orcid": "https://orcid.org/0000-0001-7859-3879",
         "website": "https://zprivf.github.io/website/",
         "github": "https://github.com/Zprivf"
-      },
-      "status": "Graduated"
+      }
     },
-
     {
       "name": "Mahlet Melaku Kebede",
-      "role": "Ph.D. Student (2021-2026)",
+      "status": "alumni",
+      "start_year": 2021,
+      "completed": 2026,
+      "research_area": "PFAS footprints, environmental pathways, and water-quality risk",
+      "position": "",
       "focus": "Research focus: ",
       "photo": "assets/img/mahlet-melaku.svg",
       "links": {
@@ -95,9 +97,7 @@
         "orcid": "https://orcid.org/0000-0002-3534-6007",
         "website": "",
         "github": ""
-      },
-      "status": "Graduated"
+      }
     }
-
   ]
 }
