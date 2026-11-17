@@ -45,48 +45,23 @@
 
   <section class="section">
     <div class="wrap">
-      <p class="research-lead">Water security problems rarely stay within one boundary. Crops grown in one country are consumed in another, droughts propagate from headwaters to downstream users, groundwater pumped for irrigation reduces the flow of nearby rivers, and contaminants released from consumer products reach soils and aquifers far from their source. Understanding these connections requires analyses that move between the globe, the nation, and the individual river basin, and methods that combine physical understanding with the growing volume of observational data.</p>
-      <p class="research-lead">Our research brings together traditional process-based approaches, such as hydrologic and crop modeling and water footprint accounting, with satellite remote sensing and machine learning. The aim is to quantify how much water is used and where, how much is available and when, and what the resulting risks mean for people, ecosystems, and the sectors that depend on water.</p>
+      <p class="research-lead">At the global scale, the lab assesses water scarcity and the water footprints of crops, livestock, and international trade. Across the United States, it addresses drought and low-flow risk, streamflow prediction, livestock water use, and PFAS releases from consumer products. At the basin scale, it examines agricultural water use under water rights in the Upper Colorado River Basin and the effects of groundwater and surface-water withdrawals on streamflow in the Mississippi Embayment. These studies combine process-based hydrologic and crop modeling and water footprint accounting with satellite remote sensing and machine learning.</p>
       <a class="btn btn-blue" href="projects.html">View our projects →</a>
     </div>
   </section>
 
   <section class="section section--shaded">
     <div class="wrap">
-      <h2>Water Security Challenges Across Scales</h2>
-      <div class="scale-grid">
-        <div class="scale-card">
-          <h3>Global</h3>
-          <p>The water used to grow food and produce goods is shared across borders through trade. We quantify the green, blue, and grey water footprints of crops and livestock products, the water footprints of national consumption, and the virtual water embedded in international trade over five decades. Combined with global hydrological modeling of water availability, these assessments show where and when human demand exceeds the water that is available, and how the choice of scarcity indicator and temporal aggregation changes that picture.</p>
-        </div>
-        <div class="scale-card">
-          <h3>National</h3>
-          <p>Across the United States, drought and low flows create risks for water supply, ecosystems, and critical sectors. We are developing nationally consistent, observation-based low-flow and hydrologic drought thresholds, improving annual and daily streamflow prediction in gauged and ungauged basins, mapping the water use of concentrated animal feeding operations, and estimating PFAS releases from consumer products at state and county levels.</p>
-        </div>
-        <div class="scale-card">
-          <h3>Regional and Basin</h3>
-          <p>Many water decisions are made within individual river basins and aquifers. In the Upper Colorado River Basin we examine how drought and the prior-appropriation water-rights system shape agricultural water use and productivity for thousands of farm parcels. In the Mississippi Embayment we evaluate how groundwater and surface-water withdrawals alter streamflow, especially during low-flow periods. Our PFAS work follows these contaminants through soils and groundwater and tests materials that can remove them from water.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <h2>From Process-Based Models to Machine Learning</h2>
-      <div class="scale-grid">
-        <div class="scale-card">
-          <h3>Hydrologic and Crop Modeling</h3>
-          <p>Global and continental hydrological models, water-balance and Budyko frameworks, and the FAO AquaCrop crop model simulate water availability, evapotranspiration, streamflow, and crop yield. Water footprint accounting links these physical estimates to production, consumption, and trade, and uncertainty analysis shows how input data such as harvested area propagate into the final estimates.</p>
-        </div>
-        <div class="scale-card">
-          <h3>Remote Sensing and Geospatial Analysis</h3>
-          <p>Satellite observations, including GRACE total water storage, satellite-derived evapotranspiration, and high-resolution imagery, provide spatially complete information on water storage, crop water use, and land use. Geospatial analysis combines these data with water-rights records, water-withdrawal data, and inventories of livestock operations and contaminant sources.</p>
-        </div>
-        <div class="scale-card">
-          <h3>Machine Learning and Data Assimilation</h3>
-          <p>Deep learning models such as long short-term memory (LSTM) networks, machine-learning parameterizations of hydrologic frameworks, and data assimilation improve prediction in gauged and ungauged basins and help quantify predictive uncertainty. Machine learning is also used to map livestock operations from satellite imagery and to model PFAS fate and transport.</p>
-        </div>
+      <h2>Funded Research Projects</h2>
+      <div class="table-scroll">
+        <table class="research-table">
+          <thead>
+            <tr><th>Project</th><th>Funding</th><th>Period</th></tr>
+          </thead>
+          <tbody id="research-projects">
+            <tr><td colspan="3" class="state-msg">Loading…</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -124,6 +99,7 @@
 <script src="js/main.js"></script>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+  renderProjectTable('#research-projects');
 </script>
 </body>
 </html>

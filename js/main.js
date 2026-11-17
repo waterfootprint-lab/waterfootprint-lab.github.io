@@ -110,6 +110,23 @@ async function renderTeam(currentSel, alumniSel) {
 }
 
 /* ---- Projects ---- */
+function projectSlug(title) {
+  return String(title).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+async function renderProjectTable(sel) {
+  const el = document.querySelector(sel);
+  if (!el) return;
+  const data = await loadJSON('data/projects.json');
+  if (!data || data.length === 0) { el.innerHTML = '<tr><td colspan="3" class="state-msg">No projects listed yet.</td></tr>'; return; }
+  el.innerHTML = data.map(p => `
+    <tr>
+      <td><a href="projects.html#${projectSlug(p.title)}">${esc(p.title)}</a></td>
+      <td>${esc(p.funding || '')}</td>
+      <td class="nowrap">${esc(p.period || '')}</td>
+    </tr>`).join('');
+}
+
 async function renderProjects(sel) {
   const el = document.querySelector(sel);
   if (!el) return;
@@ -126,7 +143,7 @@ async function renderProjects(sel) {
     const pubs = (p.publications || []).map(x => `
           <li>${esc(x.cite)}. ${x.link ? `<a href="${x.link}" target="_blank" rel="noopener">${esc(x.title)}</a>` : esc(x.title)}. <em>${esc(x.venue)}</em>.</li>`).join('');
     return `
-    <article class="project-card">
+    <article class="project-card" id="${projectSlug(p.title)}">
       <header class="project-head">
         <h3>${esc(p.title)}</h3>
         ${p.period ? `<span class="project-period">${esc(p.period)}</span>` : ''}
@@ -141,6 +158,10 @@ async function renderProjects(sel) {
       </div>
     </article>`;
   }).join('');
+  if (location.hash) {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
 }
 
 /* ---- News ---- */

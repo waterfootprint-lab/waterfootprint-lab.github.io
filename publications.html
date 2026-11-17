@@ -52,6 +52,9 @@
     align-items: start;
   }
   .pub-item:last-child { border-bottom: none; }
+  .pub-cite { font-size: 0.98rem; line-height: 1.65; color: var(--gray-dark); }
+  .pub-cite em { font-style: italic; }
+  .pub-cite a { color: var(--blue); overflow-wrap: anywhere; }
 
   .pub-num {
     font-family: var(--font-mono);
@@ -192,19 +195,17 @@ function esc(s) {
 }
 
 function renderPubItem(p, num) {
-  const titleHtml = p.link
-    ? `<a href="${p.link}" target="_blank" rel="noopener">${esc(p.title)}</a>`
-    : esc(p.title);
+  const doiUrl = p.doi ? `https://doi.org/${p.doi}` : (p.link || '');
+  const source = `<em>${esc(p.venue)}</em>`
+    + (p.volume ? `, <em>${esc(p.volume)}</em>` : '')
+    + (p.issue ? `(${esc(p.issue)})` : '')
+    + (p.pages ? `, ${esc(p.pages)}` : '');
   return `
     <div class="pub-item">
       <span class="pub-num">${num}.</span>
-      <div>
-        <span class="pub-title">${titleHtml}</span>
-        <div class="pub-authors">${esc(p.authors)}</div>
-        <div class="pub-venue"><strong>${esc(p.venue)}</strong>${p.volume ? ', ' + esc(p.volume) : ''}${p.year ? ' (' + p.year + ')' : ''}.</div>
-        ${p.note ? `<span class="pub-note-badge">${esc(p.note)}</span>` : ''}
-        ${p.student ? `<span class="pub-student-badge">Student: ${esc(p.student)}</span>` : ''}
-        ${p.doi ? `<span class="pub-doi">DOI: ${esc(p.doi)}</span>` : ''}
+      <div class="pub-cite">
+        ${esc(p.authors)} (${p.year}). ${esc(p.title)}. ${source}.
+        ${doiUrl ? `<a href="${doiUrl}" target="_blank" rel="noopener">${esc(doiUrl)}</a>` : ''}
       </div>
     </div>`;
 }
